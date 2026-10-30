@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Slugger House</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        /* BAGIAN UTAMA */
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #1c1c1c;
+            margin: 30px;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+
+        .teks {
+            width: 50%;
+        }
+
+        .teks h1 {
+            color: #ffcc00;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .teks p {
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #ffcc00;
+            color: black;
+            padding: 13px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .tombol:hover {
+            background: #e6b800;
+        }
+
+        .gambar-utama {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        /* PRODUK UNGGULAN */
+        .unggulan {
+            padding: 10px 30px 40px;
+        }
+
+        .unggulan h2 {
+            color: #ffcc00;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .unggulan > p {
+            color: #cccccc;
+            margin-bottom: 25px;
+        }
+
+        .daftar-produk {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .produk {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            width: 48%;
+        }
+
+        .produk img {
+            width: 40%;
+            height: 220px;
+            object-fit: contain;
+            background: #151515;
+            border-radius: 8px;
+        }
+
+        .deskripsi h3 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .harga {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .deskripsi p {
+            color: #cccccc;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #333;
+            color: #cccccc;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 700px) {
+            .banner {
+                flex-direction: column;
+                margin: 15px;
+                padding: 25px;
+            }
+
+            .teks {
+                width: 100%;
+            }
+
+            .teks h1 {
+                font-size: 32px;
+            }
+
+            .gambar-utama {
+                width: 100%;
+                margin-top: 25px;
+            }
+
+            .unggulan {
+                padding: 15px;
+            }
+
+            .produk {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .produk img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN UTAMA -->
+    <div class="banner">
+
+        <div class="teks">
+            <h1>Slugger House</h1>
+
+            <p>
+                Perlengkapan baseball untuk kamu yang berani tempur 
+                di lapangan dan semangat untuk menjadi JUARA!
+            </p>
+
+            <a href="product.html" class="tombol">
+                Lihat Koleksi →
+            </a>
+        </div>
+
+        <img src="gambarB/crbnpro.jpg"
+             alt="Bat Baseball Terbaik"
+             class="gambar-utama">
+
+    </div>
+
+    <!-- PRODUK UNGGULAN -->
+    <div class="unggulan">
+
+        <h2>Produk Unggulan</h2>
+
+        <p>Beberapa pilihan terbaik untuk kamu.</p>
+
+        <div class="daftar-produk">
+
+            <!-- PRODUK COKELAT -->
+            <div class="produk">
+
+                <img src="gambarB/a2000cream.jpg"
+                     alt="Wilson A2000 Cokelat">
+
+                <div class="deskripsi">
+                    <h3>Wilson A2000 Cokelat</h3>
+
+                    <div class="harga">
+                        Rp4.100.000
+                    </div>
+
+                    <p>
+                        Sarung tangan baseball premium
+                        dengan kualitas kulit terbaik.
+                        Cocok untuk pemain baseball.
+                    </p>
+
+                    <button><a href="product.html" class="tombol">
+                        Lihat Produk →
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- PRODUK PINK -->
+            <div class="produk">
+
+                <img src="gambarB/a2000pink.jpg"
+                     alt="Wilson A2000 Pink">
+
+                <div class="deskripsi">
+                    <h3>Wilson A2000 Pink</h3>
+
+                    <div class="harga">
+                        Cek harga di halaman produk
+                    </div>
+
+                    <p>
+                        Desain pink yang unik dan menarik,
+                        dengan kualitas premium dari Wilson.
+                    </p>
+
+                    <a href="product.html" class="tombol">
+                        Lihat Produk →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Slugger House. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

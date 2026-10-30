@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Informasi Kami - Slugger House</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        /* HEADER */
+
+        header {
+            background: linear-gradient(135deg, #111, #242424);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+
+            border-bottom: 2px solid #f5c400;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #f5c400;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #bbb;
+        }
+
+
+        /* JUDUL */
+
+        .judul {
+            text-align: center;
+            margin: 40px 20px 10px;
+        }
+
+        .judul h2 {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .judul p {
+            color: #999;
+        }
+
+
+        /* CONTAINER */
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+
+            margin: 30px auto 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+
+        /* KOTAK INFORMASI */
+
+        .kotak {
+            background: #1c1c1c;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            border: 1px solid #333;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+            transition: 0.3s;
+        }
+
+        .kotak:hover {
+            transform: translateY(-7px);
+
+            border-color: #f5c400;
+
+            box-shadow: 0 12px 30px rgba(245, 196, 0, 0.15);
+        }
+
+
+        /* ICON */
+
+        .icon {
+            width: 65px;
+            height: 65px;
+
+            margin: 0 auto 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #f5c400;
+
+            color: #111;
+
+            border-radius: 50%;
+
+            font-size: 32px;
+
+            transition: 0.3s;
+        }
+
+        .kotak:hover .icon {
+            transform: scale(1.1);
+        }
+
+
+        /* JUDUL KOTAK */
+
+        .kotak h3 {
+            color: #f5c400;
+
+            font-size: 22px;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* TEXT */
+
+        .kotak p {
+            color: #bbb;
+
+            line-height: 1.7;
+        }
+
+
+        /* TOMBOL */
+
+        .tombol {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            padding: 10px 20px;
+
+            background: #f5c400;
+
+            color: #111;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .tombol:hover {
+            background: white;
+
+            transform: scale(1.05);
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #0a0a0a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            border-top: 1px solid #333;
+        }
+
+        footer h3 {
+            color: #f5c400;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #777;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media screen and (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .judul h2 {
+                font-size: 27px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Slugger House</h1>
+
+        <p>
+            Baseball Store untuk Kamu yang Suka Main & Tampil Keren
+        </p>
+
+    </header>
+
+
+    <!-- JUDUL -->
+
+    <div class="judul">
+
+        <h2>Informasi Kami</h2>
+
+        <p>
+            Hubungi kami atau kunjungi toko kami untuk informasi lebih lanjut.
+        </p>
+
+    </div>
+
+
+    <!-- INFORMASI -->
+
+    <div class="container">
+
+
+        <div class="kotak">
+
+            <div class="icon">📍</div>
+
+            <h3>Alamat</h3>
+
+            <p>
+                Jl. Belitung No. 8,<br>
+                Bandung, Jawa Barat
+            </p>
+
+            <a href="#" class="tombol">
+                Lihat Lokasi
+            </a>
+
+        </div>
+
+
+        <div class="kotak">
+
+            <div class="icon">📞</div>
+
+            <h3>Nomor Telepon</h3>
+
+            <p>
+                0821-1866-8050
+            </p>
+
+            <a href="tel:082118668050" class="tombol">
+                Hubungi Kami
+            </a>
+
+        </div>
+
+
+        <div class="kotak">
+
+            <div class="icon">✉️</div>
+
+            <h3>Email</h3>
+
+            <p>
+                sluggerhouse@gmail.com
+            </p>
+
+            <a href="mailto:sluggerhouse@gmail.com" class="tombol">
+                Kirim Email
+            </a>
+
+        </div>
+
+
+        <div class="kotak">
+
+            <div class="icon">🕐</div>
+
+            <h3>Jam Operasional</h3>
+
+            <p>
+                Senin - Jumat<br>
+                09.00 - 20.00
+            </p>
+
+            <br>
+
+            <p>
+                Sabtu - Minggu<br>
+                10.00 - 18.00
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>SLUGGER HOUSE</h3>
+
+        <p>
+            © 2026 Slugger House. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+

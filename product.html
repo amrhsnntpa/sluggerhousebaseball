@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Produk - Slugger House</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        /* JUDUL */
+        .judul {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .judul h1 {
+            font-size: 38px;
+            color: #f5c400;
+            margin-bottom: 10px;
+        }
+
+        .judul p {
+            color: #aaa;
+            font-size: 15px;
+        }
+
+        /* PRODUK */
+        .produk {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .barang {
+            width: 245px;
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 15px;
+            overflow: hidden;
+            text-align: left;
+
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+            transition: 0.3s;
+        }
+
+        .barang:hover {
+            transform: translateY(-10px);
+            border-color: #f5c400;
+            box-shadow: 0 12px 30px rgba(245,196,0,0.2);
+        }
+
+        /* GAMBAR */
+        .gambar {
+            width: 100%;
+            height: 190px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .barang img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .barang:hover img {
+            transform: scale(1.08);
+        }
+
+        /* NAMA PRODUK */
+        .barang h3 {
+            font-size: 18px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        /* HARGA */
+        .harga {
+            color: #f5c400;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* DESKRIPSI */
+        .deskripsi {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.5;
+            min-height: 42px;
+        }
+
+        /* BUTTON */
+        button {
+            width: 100%;
+            margin-top: 18px;
+            padding: 11px;
+
+            background: #f5c400;
+            color: #111;
+
+            border: none;
+            border-radius: 8px;
+
+            font-size: 15px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+            transform: scale(1.03);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px 15px;
+            }
+
+            .judul h1 {
+                font-size: 30px;
+            }
+
+            .barang {
+                width: 100%;
+                max-width: 330px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="judul">
+        <h1>SLUGGER HOUSE</h1>
+        <p>Barang Dengan Pilihan Terbaik Untuk Para Juara</p>
+    </div>
+
+
+    <div class="produk">
+
+        <!-- PRODUK 1 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/a2000cream.jpg">
+            </div>
+
+            <h3>Wilson A2000 Cokelat</h3>
+
+            <p class="harga">Rp4.100.000</p>
+
+            <p class="deskripsi">
+                Glove premium dengan kualitas terbaik untuk permainan baseball.
+            </p>
+            <button><a href="cekout1.html">pesan Sekarang</a></button>
+
+        </div>
+
+
+        <!-- PRODUK 2 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/a2000pink.jpg">
+            </div>
+
+            <h3>Wilson A2000 Pink</h3>
+
+            <p class="harga">Rp4.500.000</p>
+
+            <p class="deskripsi">
+                Glove stylish dengan performa tinggi dan desain yang menarik.
+            </p>
+
+            <button><a href="cekout2.html">pesan Sekarang</a></button>
+
+        </div>
+
+
+        <!-- PRODUK 3 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/baticon.jpg">
+            </div>
+
+            <h3>Rawlings Icon -3 BBCOR</h3>
+
+            <p class="harga">Rp6.800.000</p>
+
+            <p class="deskripsi">
+                Bat baseball berkualitas untuk meningkatkan performa permainan.
+            </p>
+
+            <button><a href="cekout3.html">Pesan Sekarang</a></button>
+
+        </div>
+
+
+        <!-- PRODUK 4 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/crbnpro.jpg">
+            </div>
+
+            <h3>Mizuno CRBN Pro -3 BBCOR</h3>
+
+            <p class="harga">Rp8.100.000</p>
+
+            <p class="deskripsi">
+                Bat premium dengan desain modern dan performa maksimal.
+            </p>
+
+            <button><a href="cekout4.html">Pesan Sekarang</a></button>
+
+        </div>
+
+
+
+
+        <!-- PRODUK 5 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/bgpink.jpg">
+            </div>
+
+            <h3>Franklin Batting Glove Pink</h3>
+
+            <p class="harga">Rp1.100.000</p>
+
+            <p class="deskripsi">
+                Sarung tangan terbaik dengan pilihan bahan yang premium
+            </p>
+
+            <button><a href="cekout5.html">Pesan Sekarang</a></button>
+
+        </div>
+
+
+
+
+
+        <!-- PRODUK 6 -->
+        <div class="barang">
+
+            <div class="gambar">
+                <img src="gambarB/bgoren.jpg">
+            </div>
+
+            <h3>Franklin Batting Glove Oren</h3>
+
+            <p class="harga">Rp1.100.000</p>
+
+            <p class="deskripsi">
+                Sarung tangan terbaik dengan pilihan bahan yang premium
+            </p>
+
+            <button><a href="cekout6.html">Pesan Sekarang</a></button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
