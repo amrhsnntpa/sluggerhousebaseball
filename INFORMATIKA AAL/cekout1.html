@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Slugger House</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #111;
+            color: white;
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        .kotak {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #ffcc00;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kotak">
+        <h1>Slugger House</h1>
+        <h2>Checkout</h2>
+
+        <form>
+            <h3>Data Diri</h3>
+
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama" required>
+
+            <label>Nomor Telepon</label>
+            <input type="text" placeholder="Masukkan nomor telepon" required>
+
+            <label>Alamat</label>
+            <input type="text" placeholder="Masukkan alamat" required>
+
+            <h3>Detail Pesanan</h3>
+
+            <p>Nama Produk: Wilson A2000 Cokelat</p>
+            <p>Harga: Rp4.100.000</p>
+
+            <label>Quantity:</label>
+            <input type="number" min="1" value="1" required>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+
+</body>
+</html>
