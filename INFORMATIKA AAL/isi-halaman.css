@@ -1,4 +1,0 @@
-/* Pasang CSS ini di file HTML yang DIMUAT di dalam iframe (halaman isi) */
-:root { color-scheme: dark; }
-html { scrollbar-width: thin; scrollbar-color: #ffcc00 #121212; }
-body { background: transparent; margin: 0; }
